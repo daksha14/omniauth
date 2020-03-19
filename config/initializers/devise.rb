@@ -262,6 +262,9 @@ Devise.setup do |config|
    config.omniauth :google_oauth2, '710855265292-vrspgt73bv5jf5ru4gvaouucsefdbq90.apps.googleusercontent.com',
                    'e8MrbxYS7g_j7eyPcVanwqS4',{}
    OmniAuth.config.full_host = Rails.env.production? ? 'https://domain.com' : 'http://localhost:3000'
+   
+   config.omniauth :github, 'b332e84b1b6cd97e1b66',
+   'ae2d5e05a715091143dd6132ab24fce1b10ec4d8', scope: "user:email" 
   
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
