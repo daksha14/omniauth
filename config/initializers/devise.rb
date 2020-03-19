@@ -265,6 +265,8 @@ Devise.setup do |config|
    
    config.omniauth :github, 'b332e84b1b6cd97e1b66',
    'ae2d5e05a715091143dd6132ab24fce1b10ec4d8', scope: "user:email" 
+
+   config.omniauth :facebook, '636255010262073', 'eab6d7d952898592edad8110d45079f1'  
   
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
